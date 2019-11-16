@@ -6,15 +6,19 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>https://example.com/galleries/rss.xml</loc>
-  <lastmod>2019-11-16T21:57:00Z</lastmod>
+  <loc>https://excellentsport.github.io/categories/test.xml</loc>
+  <lastmod>2019-11-16T22:52:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://example.com/rss.xml</loc>
-  <lastmod>2019-11-16T21:17:00Z</lastmod>
+  <loc>https://excellentsport.github.io/galleries/rss.xml</loc>
+  <lastmod>2019-11-16T23:31:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://example.com/sitemap.xml</loc>
-  <lastmod>2019-11-16T21:57:00Z</lastmod>
+  <loc>https://excellentsport.github.io/rss.xml</loc>
+  <lastmod>2019-11-16T22:52:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://excellentsport.github.io/sitemap.xml</loc>
+  <lastmod>2019-11-16T23:31:00Z</lastmod>
  </sitemap>
 </sitemapindex>
