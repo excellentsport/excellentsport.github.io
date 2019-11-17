@@ -24,7 +24,7 @@ SITE_URL = "https://excellentsport.github.io/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://example.com/"
-BLOG_EMAIL = "george@georgebeckham.com"
+BLOG_EMAIL = "gbeckham@csumb.edu"
 BLOG_DESCRIPTION = "Personal Site for George Beckham, PhD."  # (translatable)
 
 # Nikola is multilingual!
@@ -141,6 +141,7 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/", "Home"),
         ("/blog/index.html", "Blog"),
+        ("/categories/", "Archive")
     ),
 }
 
@@ -553,7 +554,7 @@ FRONT_INDEX_HEADER = {
 # Create per-month archives instead of per-year
 # CREATE_MONTHLY_ARCHIVE = False
 # Create one large archive instead of per-year
-# CREATE_SINGLE_ARCHIVE = False
+CREATE_SINGLE_ARCHIVE = True
 # Create year, month, and day archives each with a (long) list of posts
 # (overrides both CREATE_MONTHLY_ARCHIVE and CREATE_SINGLE_ARCHIVE)
 # CREATE_FULL_ARCHIVES = False
@@ -947,6 +948,23 @@ CONTENT_FOOTER = """
     <i class="fa fa-github-square fa-stack-2x"></i>
   </a>
 </span>
+<span class="fa-stack fa-2x">
+  <a href="https://scholar.google.com/citations?user=wcoVq0IAAAAJ">
+    <i class="ai ai-google-scholar-square ai-2x"></i>
+  </a>
+</span>
+<span class="fa-stack fa-2x">
+  <a href="https://www.researchgate.net/profile/George_Beckham">
+    <i class="ai ai-researchgate-square ai-2x"></i>
+  </a>
+</span>
+<span class="fa-stack fa-2x">
+  <a href="mailto:{email}">
+    <i class="fa fa-square fa-stack-2x"></i>
+    <i class="fa fa-envelope fa-inverse fa-stack-1x"></i>
+  </a>
+</span>
+</p>
 <p>
   Contents &copy; {date}  {author}
   &mdash;
@@ -1114,23 +1132,6 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 # ['--base-header-level=2']
 # PANDOC_OPTIONS = []
 
-# Social buttons. This is sample code for AddThis (which was the default for a
-# long time). Insert anything you want here, or even make it empty (which is
-# the default right now)
-# (translatable)
-# SOCIAL_BUTTONS_CODE = """
-# <!-- Social buttons -->
-# <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
-# <a class="addthis_button_more">Share</a>
-# <ul><li><a class="addthis_button_facebook"></a>
-# <li><a class="addthis_button_google_plusone_share"></a>
-# <li><a class="addthis_button_linkedin"></a>
-# <li><a class="addthis_button_twitter"></a>
-# </ul>
-# </div>
-# <script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
-# <!-- End of social buttons -->
-# """
 
 # Show link to source for the posts?
 SHOW_SOURCELINK = False
@@ -1227,7 +1228,11 @@ SHOW_SOURCELINK = False
 # Extra things you want in the pages HEAD tag. This will be added right
 # before </head>
 # (translatable)
-EXTRA_HEAD_DATA = '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">'
+EXTRA_HEAD_DATA = """
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+"""
+
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)
