@@ -947,16 +947,6 @@ CONTENT_FOOTER = """
     <i class="fa fa-github-square fa-stack-2x"></i>
   </a>
 </span>
-<span class="fa-stack fa-2x">
-  <a href="https://scholar.google.com/citations?hl=en&user=wcoVq0IAAAAJ">
-    <i class="ai ai-google-scholar-square ai-2x"></i>
-  </a>
-</span>
-<span class="fa-stack fa-2x">
-  <a href="https://www.researchgate.net/profile/George_Beckham">
-    <i class="fab fa-researchgate"></i>
-  </a>
-</span>
 <p>
   Contents &copy; {date}  {author}
   &mdash;
@@ -965,7 +955,7 @@ CONTENT_FOOTER = """
   Powered by <a href="https://getnikola.com" rel="nofollow">Nikola</a>
 </p>
 </div>
-'''"""
+"""
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
@@ -1237,7 +1227,7 @@ SHOW_SOURCELINK = False
 # Extra things you want in the pages HEAD tag. This will be added right
 # before </head>
 # (translatable)
-EXTRA_HEAD_DATA = "<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">"
+EXTRA_HEAD_DATA = '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">"'
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)
