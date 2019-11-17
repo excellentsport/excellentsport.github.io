@@ -952,6 +952,11 @@ CONTENT_FOOTER = """
     <i class="ai ai-google-scholar-square ai-2x"></i>
   </a>
 </span>
+<span class="fa-stack fa-2x">
+  <a href="https://www.researchgate.net/profile/George_Beckham">
+    <i class="fab fa-researchgate"></i>
+  </a>
+</span>
 <p>
   Contents &copy; {date}  {author}
   &mdash;
