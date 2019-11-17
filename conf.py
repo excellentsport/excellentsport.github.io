@@ -935,7 +935,32 @@ LICENSE = ""
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = 'Contents &copy; {date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         {license}'
+CONTENT_FOOTER = """
+<div class="text-center">
+<span class="fa-stack fa-2x">
+  <a href="https://twitter.com/excellentsport">
+    <i class="fa fa-twitter-square fa-stack-2x"></i>
+  </a>
+</span>
+<span class="fa-stack fa-2x">
+  <a href="https://github.com/excellentsport">
+    <i class="fa fa-github-square fa-stack-2x"></i>
+  </a>
+</span>
+<span class="fa-stack fa-2x">
+  <a href="https://scholar.google.com/citations?hl=en&user=wcoVq0IAAAAJ">
+    <i class="ai ai-google-scholar-square ai-2x"></i>
+  </a>
+</span>
+<p>
+  Contents &copy; {date}  {author}
+  &mdash;
+  {license}
+  &mdash;
+  Powered by <a href="https://getnikola.com" rel="nofollow">Nikola</a>
+</p>
+</div>
+'''"""
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
@@ -1207,7 +1232,7 @@ SHOW_SOURCELINK = False
 # Extra things you want in the pages HEAD tag. This will be added right
 # before </head>
 # (translatable)
-# EXTRA_HEAD_DATA = ""
+EXTRA_HEAD_DATA = "<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">"
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)
