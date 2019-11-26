@@ -141,8 +141,8 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/", "Home"),
         ("/blog/index.html", "Blog"),
-        ("/categories/", "Archive"),
-        ("/publications.rst", "Publications")
+        ("/Categories/", "Archive"),
+        ("/Publications/", "Publications")
     ),
 }
 
